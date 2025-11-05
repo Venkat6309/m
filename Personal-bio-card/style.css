@@ -1,0 +1,215 @@
+ /*  Base Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  Global Styles */
+body {
+  background: linear-gradient(120deg, #f0f4ff, #f9f9f9);
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/*  Navigation */
+nav {
+  height: 5.5rem;
+  background: linear-gradient(135deg, #3a8ef6, #8b5cf6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+/*  Layout Containers */
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+/*  Image Card */
+#img-card {
+  height: 30em;
+  width: 30%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+#img-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Profile Image */
+img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #8b5cf6;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.3);
+}
+
+/*  Social Icons */
+article {
+  height: 4rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.social i {
+  color: #3a8ef6;
+  transition: all 0.4s ease;
+}
+
+.social:hover {
+  background: linear-gradient(135deg, #00dbde, #fc00ff);
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(252, 0, 255, 0.5);
+  transition-duration: 500ms;
+}
+
+.social:hover i {
+  color: #fff;
+}
+
+/*  Resume Button */
+#resume {
+  height: 2.7rem;
+  width: 40%;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  background: linear-gradient(135deg, #3a8ef6, #8b5cf6);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#resume:hover {
+  background: linear-gradient(135deg, #8b5cf6, #3a8ef6);
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(138, 92, 246, 0.6);
+}
+
+/*  Bio Card */
+#bio-card {
+  height: 30em;
+  width: 60%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  overflow-y:auto;
+  transition: transform 0.3s ease;
+}
+
+#bio-card:hover {
+  transform: translateY(-5px);
+}
+
+/* About Section */
+#about {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3a8ef6;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/*  Footer */
+footer {
+  height: 5.5rem;
+  text-align: center;
+  background: #79aef4;
+  color: #000000;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+/*  Responsive Design */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  #img-card, #bio-card {
+    width: 90%;
+    height: auto;
+  }
+
+  img {
+    height: 14rem;
+    width: 14rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #img-card {
+    height:30em;
+  }
+
+  footer {
+    height: 6rem;
+    font-size: 0.9rem;
+  }
+}
