@@ -1,0 +1,179 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+  min-height:100vh;
+  /* background:linear-gradient(145deg,blue,skyblue,rgb(158, 158, 239),rgb(79, 233, 169)); */
+  background: linear-gradient(135deg, #89ddd8, #f598b5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+div{
+    min-height:18em;
+    max-width:80%;
+    margin: auto;
+    /* border-radius:25px; */
+    background-color:white;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#author{
+     /* font-family: "Shadows Into Light", cursive; */
+     font-family: cursive;
+     letter-spacing:0.5px;
+}
+#heading{
+    margin-top:3%;
+    margin-bottom: 4%;
+    font-size:3rem;
+    color: #222;
+    font-family: 'Pacifico', cursive;
+      /* font-family: 'Righteous', sans-serif; */
+    line-height:70px;
+
+}
+#text{
+    padding:2%;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing:1.5px;
+}
+#generate{
+    height:3em;
+    width:12%;
+    font-size:1rem;
+    font-weight:600;
+    margin-top:6%;
+    margin-right:25%;
+    border-radius:25px;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    transition-duration:500ms;
+    color: rgb(0, 0, 0);
+    font-weight:600;
+    border: none;
+    offset: none;
+    
+}
+#generate:hover{
+    transform: scale(1.05);
+    transition-duration:500ms;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    box-shadow: 0 6px 15px rgba(102, 166, 255, 0.4);
+    cursor: pointer;
+}
+#copy{
+    height:3em;
+    width:12%;
+    font-size:1rem;
+    border-radius: 25px;
+    background:rgb(204, 6, 6);
+    transition-duration:500ms;
+    color: white;
+    font-weight:600;
+    border: none;
+    offset: none;
+    
+}
+#copy:hover{
+    background:rgb(221, 44, 44);
+     transition-duration:500ms;
+     transform: scale(1.05);
+     box-shadow: 0 6px 15px rgba(102, 166, 255, 0.4);
+     cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  #heading {
+    font-size: 1.9rem;
+    margin:5% 0% 6% 0%;
+  }
+
+  div {
+    max-width: 90%;
+    min-height: 12em;
+    padding: 5%;
+  }
+
+  #generate,
+  #copy {
+    width: 70%;
+    height: 2.8em;
+    font-size: 0.9rem;
+    display: block;
+    margin: 1em auto;
+  }
+}
+
+/* 📲 Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  #heading {
+    font-size: 2.2rem;
+    margin:3% 0% 4% 0%;
+  }
+
+  div {
+    max-width: 85%;
+    min-height: 15em;
+  }
+
+  #generate,
+  #copy {
+    width: 35%;
+    height: 2.8em;
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* 💻 Laptops and Desktops (769px and above) */
+@media (min-width: 769px) {
+  div {
+    max-width: 70%;
+  }
+
+ #heading {
+    font-size: 3rem;
+    margin:3% 0% 4% 0%;
+  }
+
+  #generate,
+  #copy {
+    width: 12%;
+  }
+}
+
+/* Animations */
+#introText {
+  margin-top: 3%;
+  font-weight: 600;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional fade-out if you want it to disappear after few seconds */
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
